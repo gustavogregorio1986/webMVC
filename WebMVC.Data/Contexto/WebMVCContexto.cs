@@ -10,6 +10,7 @@ namespace WebMVC.Data.Contexto
 {
     public class WebMVCContexto : DbContext
     {
+
         public WebMVCContexto(DbContextOptions options)
             : base(options) 
         {
