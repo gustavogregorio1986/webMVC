@@ -1,0 +1,12 @@
+C:\MVCProjeto\WebMVC\WebMVC.Dominio\bin\Debug\net5.0\WebMVC.Dominio.deps.json
+C:\MVCProjeto\WebMVC\WebMVC.Dominio\bin\Debug\net5.0\WebMVC.Dominio.dll
+C:\MVCProjeto\WebMVC\WebMVC.Dominio\bin\Debug\net5.0\WebMVC.Dominio.pdb
+C:\MVCProjeto\WebMVC\WebMVC.Dominio\obj\Debug\net5.0\WebMVC.Dominio.csproj.AssemblyReference.cache
+C:\MVCProjeto\WebMVC\WebMVC.Dominio\obj\Debug\net5.0\WebMVC.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\MVCProjeto\WebMVC\WebMVC.Dominio\obj\Debug\net5.0\WebMVC.Dominio.AssemblyInfoInputs.cache
+C:\MVCProjeto\WebMVC\WebMVC.Dominio\obj\Debug\net5.0\WebMVC.Dominio.AssemblyInfo.cs
+C:\MVCProjeto\WebMVC\WebMVC.Dominio\obj\Debug\net5.0\WebMVC.Dominio.csproj.CoreCompileInputs.cache
+C:\MVCProjeto\WebMVC\WebMVC.Dominio\obj\Debug\net5.0\WebMVC.Dominio.dll
+C:\MVCProjeto\WebMVC\WebMVC.Dominio\obj\Debug\net5.0\refint\WebMVC.Dominio.dll
+C:\MVCProjeto\WebMVC\WebMVC.Dominio\obj\Debug\net5.0\WebMVC.Dominio.pdb
+C:\MVCProjeto\WebMVC\WebMVC.Dominio\obj\Debug\net5.0\ref\WebMVC.Dominio.dll
