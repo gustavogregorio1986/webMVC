@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MVCProjeto\\WebMVC\\WebMVC.Servico\\WebMVC.Servico.csproj": {}
+    "C:\\MVCProjeto\\webMVC\\WebMVC.Servico\\WebMVC.Servico.csproj": {}
   },
   "projects": {
-    "C:\\MVCProjeto\\WebMVC\\WebMVC.Data\\WebMVC.Data.csproj": {
+    "C:\\MVCProjeto\\webMVC\\WebMVC.Data\\WebMVC.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MVCProjeto\\WebMVC\\WebMVC.Data\\WebMVC.Data.csproj",
+        "projectUniqueName": "C:\\MVCProjeto\\webMVC\\WebMVC.Data\\WebMVC.Data.csproj",
         "projectName": "WebMVC.Data",
-        "projectPath": "C:\\MVCProjeto\\WebMVC\\WebMVC.Data\\WebMVC.Data.csproj",
+        "projectPath": "C:\\MVCProjeto\\webMVC\\WebMVC.Data\\WebMVC.Data.csproj",
         "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-        "outputPath": "C:\\MVCProjeto\\WebMVC\\WebMVC.Data\\obj\\",
+        "outputPath": "C:\\MVCProjeto\\webMVC\\WebMVC.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj": {
-                "projectPath": "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj"
+              "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj": {
+                "projectPath": "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj": {
+    "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj",
+        "projectUniqueName": "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj",
         "projectName": "WebMVC.Dominio",
-        "projectPath": "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj",
+        "projectPath": "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj",
         "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-        "outputPath": "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\obj\\",
+        "outputPath": "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -138,14 +138,14 @@
         }
       }
     },
-    "C:\\MVCProjeto\\WebMVC\\WebMVC.Servico\\WebMVC.Servico.csproj": {
+    "C:\\MVCProjeto\\webMVC\\WebMVC.Servico\\WebMVC.Servico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MVCProjeto\\WebMVC\\WebMVC.Servico\\WebMVC.Servico.csproj",
+        "projectUniqueName": "C:\\MVCProjeto\\webMVC\\WebMVC.Servico\\WebMVC.Servico.csproj",
         "projectName": "WebMVC.Servico",
-        "projectPath": "C:\\MVCProjeto\\WebMVC\\WebMVC.Servico\\WebMVC.Servico.csproj",
+        "projectPath": "C:\\MVCProjeto\\webMVC\\WebMVC.Servico\\WebMVC.Servico.csproj",
         "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-        "outputPath": "C:\\MVCProjeto\\WebMVC\\WebMVC.Servico\\obj\\",
+        "outputPath": "C:\\MVCProjeto\\webMVC\\WebMVC.Servico\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -162,11 +162,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\MVCProjeto\\WebMVC\\WebMVC.Data\\WebMVC.Data.csproj": {
-                "projectPath": "C:\\MVCProjeto\\WebMVC\\WebMVC.Data\\WebMVC.Data.csproj"
+              "C:\\MVCProjeto\\webMVC\\WebMVC.Data\\WebMVC.Data.csproj": {
+                "projectPath": "C:\\MVCProjeto\\webMVC\\WebMVC.Data\\WebMVC.Data.csproj"
               },
-              "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj": {
-                "projectPath": "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj"
+              "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj": {
+                "projectPath": "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj"
               }
             }
           }

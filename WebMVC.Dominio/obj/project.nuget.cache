@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GuCx/UXHgs/4FoAoa2pZA8D634/cC1oaNy/uGAk5lAPS8p4RSINMR/Wfk7J7X8l8DqbbMgCLm2rl2KRImWA8nA==",
+  "dgSpecHash": "pt8iKKHEa62EMOoPiL4UV0JGlrCermnKSOzvePbX5uhpfKZ0UyzjARXJ6iX4+PO8k3eFSqO9Hib+AuvZI9LBAQ==",
   "success": true,
-  "projectFilePath": "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj",
+  "projectFilePath": "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

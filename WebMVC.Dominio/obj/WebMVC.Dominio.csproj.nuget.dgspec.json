@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj": {}
+    "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj": {
+    "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj",
+        "projectUniqueName": "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj",
         "projectName": "WebMVC.Dominio",
-        "projectPath": "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj",
+        "projectPath": "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\WebMVC.Dominio.csproj",
         "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-        "outputPath": "C:\\MVCProjeto\\WebMVC\\WebMVC.Dominio\\obj\\",
+        "outputPath": "C:\\MVCProjeto\\webMVC\\WebMVC.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",

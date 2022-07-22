@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NCzL29Cl6hbn0mX0yLxEgnhkEdIasJ/22lI8TrlioKrWjs8+qVVPPI6hljVUHp2tJlYiYKWZZRznRSok+/foBA==",
+  "dgSpecHash": "0L+M4JybSXLeazOSSzIEXNbokcsvvcBrz5MFlnv1N4zOFsekEOm2EQxcFThldSQpb2dl8nan4KQekF4ka5YYog==",
   "success": true,
-  "projectFilePath": "C:\\MVCProjeto\\WebMVC\\WebMVC.Servico\\WebMVC.Servico.csproj",
+  "projectFilePath": "C:\\MVCProjeto\\webMVC\\WebMVC.Servico\\WebMVC.Servico.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gusta\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
