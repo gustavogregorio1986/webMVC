@@ -20,27 +20,27 @@ namespace WebMVC.Data.Repositorio
 
         public void Atualizar(Passageiro passageiro)
         {
-            throw new NotImplementedException();
+            _db.Update(passageiro);
         }
 
         public Passageiro Buscar(int idPassageiro)
         {
-            throw new NotImplementedException();
+            return _db.Set<Passageiro>().Find(idPassageiro);
         }
 
         public void Deletar(int idPassageiro)
         {
-            throw new NotImplementedException();
+            _db.Remove(idPassageiro);
         }
 
         public List<Origem> ListarPassageiro()
         {
-            throw new NotImplementedException();
+            return _db.Set<Origem>().ToList();
         }
 
         public void Salvar(Passageiro passageiro)
         {
-            throw new NotImplementedException();
+            _db.Add(passageiro);
         }
     }
 }

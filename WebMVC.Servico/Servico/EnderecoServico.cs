@@ -3,44 +3,44 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebMVC.Data.Contexto;
 using WebMVC.Data.Repositorio.Interface;
 using WebMVC.Dominio.Dominio;
+using WebMVC.Servico.Servico.Interface;
 
-namespace WebMVC.Data.Repositorio
+namespace WebMVC.Servico.Servico
 {
-    public class EnderecoRepository : IEnderecoRepository
+    public class EnderecoServico : IEnderecoServico
     {
-        private readonly WebMVCContexto _db;
+        private readonly IEnderecoRepository _repositorio;
 
-        public EnderecoRepository(WebMVCContexto _db)
+        public EnderecoServico(IEnderecoRepository repositorio)
         {
-            this._db = _db;
+            _repositorio = repositorio;
         }
 
         public void Atualizar(Endereco endereco)
         {
-            _db.Update(endereco);
+            throw new NotImplementedException();
         }
 
         public Endereco Buscar(int idEndereco)
         {
-            return _db.Set<Endereco>().Find(idEndereco);
+            throw new NotImplementedException();
         }
 
         public void Deletar(int idEndereco)
         {
-            _db.Remove(idEndereco);
+            throw new NotImplementedException();
         }
 
         public List<Endereco> ListarEndereco()
         {
-            return _db.Set<Endereco>().ToList();
+            throw new NotImplementedException();
         }
 
         public void Salvar(Endereco endereco)
         {
-            _db.Add(endereco);
+            throw new NotImplementedException();
         }
     }
 }

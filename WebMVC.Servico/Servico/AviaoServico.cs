@@ -3,44 +3,44 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebMVC.Data.Contexto;
 using WebMVC.Data.Repositorio.Interface;
 using WebMVC.Dominio.Dominio;
+using WebMVC.Servico.Servico.Interface;
 
-namespace WebMVC.Data.Repositorio
+namespace WebMVC.Servico.Servico
 {
-    public class AviaoRepository : IAviaoRepository
+    public class AviaoServico : IAviaoServico
     {
-        private readonly WebMVCContexto _db;
+        private readonly IAviaoRepository _repositorio;
 
-        public AviaoRepository(WebMVCContexto _db)
+        public AviaoServico(IAviaoRepository repositorio)
         {
-            this._db = _db; 
+            _repositorio = repositorio;
         }
 
         public void Atualizar(Aviao aviao)
         {
-            _db.Update(aviao);
+            throw new NotImplementedException();
         }
 
         public Aviao Buscar(int IdAviao)
         {
-           return _db.Set<Aviao>().Find(IdAviao);
+            throw new NotImplementedException();
         }
 
         public void Deletar(int idAviao)
         {
-            _db.Remove(idAviao);
+            throw new NotImplementedException();
         }
 
         public List<Aviao> ListarAviao()
         {
-            return _db.Set<Aviao>().ToList();
+            throw new NotImplementedException();
         }
 
         public void Salvar(Aviao aviao)
         {
-            _db.Add(aviao);
+            throw new NotImplementedException();
         }
     }
 }

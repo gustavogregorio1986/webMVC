@@ -3,44 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebMVC.Data.Contexto;
 using WebMVC.Data.Repositorio.Interface;
 using WebMVC.Dominio.Dominio;
+using WebMVC.Servico.Servico.Interface;
 
-namespace WebMVC.Data.Repositorio
+namespace WebMVC.Servico.Servico
 {
-    public class DestinoRepository : IDestinoRepository
+    public class DestinoServico : IDestinoServico
     {
-        private readonly WebMVCContexto _db;
 
-        public DestinoRepository(WebMVCContexto _db)
+        private readonly IDestinoRepository _repositorio;
+
+        public DestinoServico(IDestinoRepository repositorio)
         {
-            this._db = _db;
+            _repositorio = repositorio;
         }
 
         public void Atualizar(Destino destino)
         {
-            _db.Update(destino);
+            throw new NotImplementedException();
         }
 
         public Destino Buscar(int IdDestino)
         {
-            return _db.Set<Destino>().Find(IdDestino);
+            throw new NotImplementedException();
         }
 
         public void Deletar(int idDestino)
         {
-            _db.Remove(idDestino);
+            throw new NotImplementedException();
         }
 
         public List<Destino> ListarDestino()
         {
-            return _db.Set<Destino>().ToList();
+            throw new NotImplementedException();
         }
 
         public void Salvar(Destino destino)
         {
-            _db.Add(destino);
+            throw new NotImplementedException();
         }
     }
 }

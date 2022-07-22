@@ -3,45 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebMVC.Data.Contexto;
 using WebMVC.Data.Repositorio.Interface;
 using WebMVC.Dominio.Dominio;
+using WebMVC.Servico.Servico.Interface;
 
-namespace WebMVC.Data.Repositorio
+namespace WebMVC.Servico.Servico
 {
-    public class AeroportoRepository : IAeroportoRepository
+    public class AeroportoServico : IAeroportoServico
     {
 
-        private readonly WebMVCContexto _db;
+        private readonly IAeroportoRepository _repositorio;
 
-        public AeroportoRepository(WebMVCContexto _db)
+        public AeroportoServico(IAeroportoRepository repositorio)
         {
-            this._db = _db;
+            _repositorio = repositorio;
         }
 
         public void Atualizar(Aeroporto aeroporto)
         {
-            _db.Update(aeroporto);
+            _repositorio.Atualizar(aeroporto);
         }
 
         public Aeroporto Buscar(int IdAero)
         {
-            return _db.Set<Aeroporto>().Find(IdAero);
+            return _repositorio.Buscar(IdAero);
         }
 
         public void Deletar(int idAero)
         {
-            _db.Remove(idAero);
+            _repositorio.Deletar(idAero);
         }
 
         public List<Aeroporto> ListarAeroporto()
         {
-            return _db.Set<Aeroporto>().ToList();
+            return _repositorio.ListarAeroporto();
         }
 
         public void Salvar(Aeroporto aeroporto)
         {
-            _db.Add(aeroporto);
+            _repositorio.Salvar(aeroporto);
         }
     }
 }

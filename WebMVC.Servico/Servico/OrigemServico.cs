@@ -3,44 +3,44 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebMVC.Data.Contexto;
 using WebMVC.Data.Repositorio.Interface;
 using WebMVC.Dominio.Dominio;
+using WebMVC.Servico.Servico.Interface;
 
-namespace WebMVC.Data.Repositorio
+namespace WebMVC.Servico.Servico
 {
-    public class OrigemRepository : IOrigemRepository
+    public class OrigemServico : IOrigemServico
     {
-        private readonly WebMVCContexto _db;
+        private readonly IOrigemRepository _repositorio;
 
-        public OrigemRepository(WebMVCContexto _db)
+        public OrigemServico(IOrigemRepository repositorio)
         {
-            this._db = _db;
+            _repositorio = repositorio;
         }
 
         public void Atualizar(Origem origem)
         {
-            _db.Add(origem);
+            throw new NotImplementedException();
         }
 
         public Origem Buscar(int idOrigem)
         {
-            return _db.Set<Origem>().Find(idOrigem);
+            throw new NotImplementedException();
         }
 
         public void Deletar(int idOrigem)
         {
-            _db.Remove(idOrigem);
+            throw new NotImplementedException();
         }
 
         public List<Origem> ListarOrigem()
         {
-            return _db.Set<Origem>().ToList();
+            throw new NotImplementedException();
         }
 
         public void Salvar(Origem origem)
         {
-            _db.Add(origem);
+            throw new NotImplementedException();
         }
     }
 }
