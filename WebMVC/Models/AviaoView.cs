@@ -13,5 +13,9 @@
         public string Portao { get; set; }
 
         public int Id_Aeroporto { get; set; }
+
+        public OrigemView origemView { get; set; }
+
+        public DestinoView destinoView { get; set; }
     }
 }

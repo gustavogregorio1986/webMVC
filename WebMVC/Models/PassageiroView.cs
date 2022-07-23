@@ -11,5 +11,9 @@
         public string Sexo { get; set; }
 
         public string Telefone { get; set; }
+
+        public EnderecoView enderecoView { get; set; }
+
+        public AeroportoView aeroportoView { get; set; }
     }
 }

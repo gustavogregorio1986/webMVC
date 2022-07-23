@@ -11,5 +11,7 @@ namespace WebMVC.Models
         public DateTime DataEntrada { get; set; }
 
         public int Id_Passageiro { get; set; }
+
+        public AviaoView aviaoView { get; set; }
     }
 }
