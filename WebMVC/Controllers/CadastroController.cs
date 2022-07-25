@@ -19,6 +19,5 @@ namespace WebMVC.Controllers
             return View();
         }
 
-        
     }
 }

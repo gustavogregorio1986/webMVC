@@ -1,4 +1,4 @@
-﻿
+﻿@model WebMVC.Models.PassageiroView
 @*
     tela para cadastro da cesta de compra
 *@
@@ -36,14 +36,178 @@
 <hr/>
 <div class="modal-dialog">
     <div class="modal-content">
-        @using(Html.BeginForm())
+        @using (Html.BeginForm())
         {
-              <div class="modal-header">
+            <div class="modal-header">
                 <h4 class="modal-title">Cadastrar a passagem</h4>
             </div>
+             
+            @Html.AntiForgeryToken()
+ 
+        <div class="modal-body">
+            <div class="form-horizontal">
+                @Html.ValidationSummary(true)
+                <div class="form-group">
+                    <label><span class="control-label col-md-3">Nome do Passageiro</span></label>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(model => model.NomePssageiro, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.NomePssageiro)
+                    </div>
+                </div>
 
-        }
+                 <div class="form-group">
+                    <label><span class="control-label col-md-3">Email do Passageiro</span></label>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(model => model.EmailPassageiro, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.EmailPassageiro)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><span class="control-label col-md-3">Sexo</span></label>
+                    <div class="col-md-9">
+                        @Html.DropDownListFor(model => model.Sexo, new List<SelectListItem>
+                        {
+                            new SelectListItem() {Text = "select..", Value=""},
+                           new SelectListItem() {Text = "Masculino", Value="masculino"},
+                           new SelectListItem() {Text = "Feminino", Value="feminino"}
+                        },new { @class = "form-control"})  
+                        @Html.ValidationMessageFor(model => model.Sexo)
+                    </div>
+                </div>
+                  <div class="form-group">
+                    <label><span class="control-label col-md-3">Telefone do Passageiro</span></label>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(model => model.Telefone, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.Telefone)
+                    </div>
+                </div>
+
+                 <div class="form-group">
+                    <label><span class="control-label col-md-3">Logradouro</span></label>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(model => model.enderecoView.Logradouro, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.enderecoView.Logradouro)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><span class="control-label col-md-3">Bairro</span></label>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(model => model.enderecoView.Bairro, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.enderecoView.Bairro)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><span class="control-label col-md-3">Cidade</span></label>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(model => model.enderecoView.Cidade, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.enderecoView.Cidade)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><span class="control-label col-md-3">Uf</span></label>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(model => model.enderecoView.Uf, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.enderecoView.Uf)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><span class="control-label col-md-3">Nome do Aeroporto</span></label>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(model => model.aeroportoView.NomeAero, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.aeroportoView.NomeAero)
+                    </div>
+                </div>
+
+                 <div class="form-group">
+                    <label><span class="control-label col-md-3">Data de entrada</span></label>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(model => model.aeroportoView.DataEntrada, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.aeroportoView.DataEntrada)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><span class="control-label col-md-3">Compania</span></label>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(model => model.aeroportoView.aviaoView.Compania, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.aeroportoView.aviaoView.Compania)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><span class="control-label col-md-3">Nome do Aviao</span></label>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(model => model.aeroportoView.aviaoView.NomeAviao, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.aeroportoView.aviaoView.NomeAviao)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><span class="control-label col-md-3">Portão</span></label>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(model => model.aeroportoView.aviaoView.Portao, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.aeroportoView.aviaoView.Portao)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><span class="control-label col-md-3">Origem</span></label>
+                    <div class="col-md-9">
+                        @Html.DropDownListFor(model => model.aeroportoView.aviaoView.origemView.CidadwOrigem, new List<SelectListItem>
+                        {
+                           new SelectListItem() {Text = "select..", Value=""},
+                           new SelectListItem() {Text = "Rio de Janeiro", Value="RJ"},
+                           new SelectListItem() {Text = "São Paulo", Value="SP"},
+                           new SelectListItem() {Text = "Campinas", Value="campinas"},
+                           new SelectListItem() {Text = "Joivile", Value="Joivile"},
+                           new SelectListItem() {Text = "Aracaju", Value="Aracaju"},
+                           new SelectListItem() {Text = "Salvador", Value="Salvador"},
+                           new SelectListItem() {Text = "Fortaleza", Value="Fortaleza"},
+                           new SelectListItem() {Text = "Curitiba", Value="Curitiba"},
+                           new SelectListItem() {Text = "Blumenal", Value="Blumenal"},
+                           new SelectListItem() {Text = "Gramado", Value="Gramado"},
+                           new SelectListItem() {Text = "Natal", Value="Natal"},
+                           new SelectListItem() {Text = "Pernmbuco", Value="Pernmbuco"}
+                        },new { @class = "form-control"})  
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><span class="control-label col-md-3">Destino</span></label>
+                    <div class="col-md-9">
+                        @Html.DropDownListFor(model => model.aeroportoView.aviaoView.origemView.CidadwOrigem, new List<SelectListItem>
+                        {
+                           new SelectListItem() {Text = "select..", Value=""},
+                           new SelectListItem() {Text = "Rio de Janeiro", Value="RJ"},
+                           new SelectListItem() {Text = "São Paulo", Value="SP"},
+                           new SelectListItem() {Text = "Campinas", Value="campinas"},
+                           new SelectListItem() {Text = "Joivile", Value="Joivile"},
+                           new SelectListItem() {Text = "Aracaju", Value="Aracaju"},
+                           new SelectListItem() {Text = "Salvador", Value="Salvador"},
+                           new SelectListItem() {Text = "Fortaleza", Value="Fortaleza"},
+                           new SelectListItem() {Text = "Curitiba", Value="Curitiba"},
+                           new SelectListItem() {Text = "Blumenal", Value="Blumenal"},
+                           new SelectListItem() {Text = "Gramado", Value="Gramado"},
+                           new SelectListItem() {Text = "Natal", Value="Natal"},
+                           new SelectListItem() {Text = "Pernmbuco", Value="Pernmbuco"}
+                        },new { @class = "form-control"}) 
+                        @Html.ValidationMessageFor(model => model.aeroportoView.aviaoView.destinoView.CidadwDestino)
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-</div>
+            <div class="modal-footer">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+                <input type="button" value="Cancelar" class="btn btn-default" data-dismiss="modal"/>            
+            </div>
+        }
+    </div><!-- /.modal-content -->
 </div>
 

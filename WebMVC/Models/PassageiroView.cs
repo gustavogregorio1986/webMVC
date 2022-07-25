@@ -6,7 +6,7 @@
 
         public string NomePssageiro { get; set; }
 
-        public string EmaqilPassageiro { get; set; }
+        public string EmailPassageiro { get; set; }
 
         public string Sexo { get; set; }
 
